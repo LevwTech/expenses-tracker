@@ -10,6 +10,7 @@ function App() {
     setExpense([expense, ...myExpenses]);
     // setExpense((prevExpenses) => [expense, ...prevExpenses]); // better method!
   }
+
   return (
     <Card>
       <NewExpense getAddExpense={addExpenseHandler}></NewExpense>

@@ -16,6 +16,7 @@ function ExpenseForm(props) {
   }
   function submitClick(e) {
     e.preventDefault();
+    if (title.length === 0 || amount.length === 0 || date.length === 0) return;
     const expenseData = { title, amount, date: new Date(date) };
     props.onSaveExpenseData(expenseData);
     setTitle("");
