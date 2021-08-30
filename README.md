@@ -1,2 +1,1 @@
-# react-levw
-Learning react.js through projects.
+Expenses tracker using React-js
