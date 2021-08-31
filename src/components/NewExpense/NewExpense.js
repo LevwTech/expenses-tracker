@@ -4,7 +4,7 @@ function NewExpense(props) {
   function saveExpenseData(EnteredExpenseData) {
     const expenseData = {
       ...EnteredExpenseData,
-      id: Math.floor(Math.random() * 1000) + 1,
+      id: Math.floor(Math.random() * 999999) + 1,
     };
     props.getAddExpense(expenseData);
   }
